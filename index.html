@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emanuelle.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <div class="header">
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+  </div>
+  <body>
+    <div class="container" data-0="transform:translateX(0%);" data-1000="transform:translateX(-300%);">
+    <section>
+      <div class="content"> 
+        <h2>Hi,
+        I'm Emanuelle,</h2>
+        <br>
+        <h2>web developer</h2>
+        <p>
+          Front End Developer / Web Designer
+        </p>
+        <div class="mouse_scroll">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div>
+                <span class="m_scroll_arrows first"></span>
+                <span class="m_scroll_arrows second"></span>
+                <span class="m_scroll_arrows third"></span>
+            </div>
+    </div>
+      </div>
+    </section>
+    <section>
+        <div class="content">
+          <h2>About</h2>
+          <p>
+            Emanuelle was born in <mark>Italy</mark>, precisely in Alatri, a small town 60km south of Rome.
+From an early age he had a <mark>passion</mark> for technology and for design in general.
+He began his small career in the world of web design way back in <mark>2012</mark> when he discovered Photoshop. A career that was put aside when he moved to Romania in 2015.
+After high school he started the <mark>finance and banking</mark> university which he later <mark>dropped out</mark> because it did not correspond to his way of seeing things.
+<mark>Currently</mark> he has returned to his great passion, web design but this time with a plus, the front-end developing.
+For the <mark>future</mark> he would like to get hold of and <mark>learn</mark> back-end developing.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="content">
+          <div class="works">
+          <h2>Some of my works</h2>
+          <p><mark>Click on the logos to access their websites!</mark></p>
+        </div>
+        </div>
+        <div class="gallery-container">
+        <div class="gallery">
+          <a target="_blank" href="https://www.youtube.com/channel/UC5FnSsCqevEgy1MC-HOTuRQ">
+            <img src="1.png" alt="EletrikArts" width="600" height="400">
+          </a>
+          <div class="desc"><mark>EletrikArts</mark></div>
+        </div>
+        
+        <div class="gallery">
+          <a target="_blank" href="https://www.casilinalegno.com">
+            <img src="2-1.png" alt="Casilina Legno" width="600" height="400">
+          </a>
+          <div class="desc"><mark>Casilina Legno</mark></div>
+        </div>
+        
+        <div class="gallery">
+          <a target="_blank" href="3.png">
+            <img src="3.png" alt="InvictvsProject" width="600" height="400">
+          </a>
+          <div class="desc"><mark>InvictvsProject</mark></div>
+        </div>
+        
+        <div class="gallery">
+          <a target="_blank" href="https://www.vato-gaming.eu">
+            <img src="4.png" alt="Vato Gaming" width="600" height="400">
+          </a>
+          <div class="desc"><mark>Vato Gaming</mark></div>
+        </div>
+      </section>
+      <section>
+        <div class="content">
+          <h2>Get in Touch</h2>
+          <p>
+            Want to <mark>work</mark> together or have any questions?
+            <br>
+            You can find me on the following social networks or don't hesitate and use the <mark>form!</mark></p>
+            <a href="https://www.instagram.com/emanuele.g/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/emanuelle.cornea/"><i class="fa-brands fa-facebook-square"></i></a>
+            <a href="https://discordapp.com/users/581844800597262387/"><i class="fa-brands fa-discord"></i></a>
+          </p>
+          <div class="container-form">
+              <form onsubmit=>
+                  <p>This is a <mark>Demo</mark></p>
+                  <input type="text" id="name" placeholder="Your Name" required>
+                  <input type="email" id="email" placeholder="Your Email" required>
+                  <textarea id="message" rows="4" placeholder="How can I help you?"></textarea>
+                  <button type="submit">Send</button>
+              </form>
+          </div>
+        </div>
+      </div>
+      </section>
+      <script type="text/javascript" src="skrollr.js"></script>
+	<script type="text/javascript">
+	var s = skrollr.init();
+	</script>
+    <script>
+        window.onscroll = function() {myFunction()};
+        function myFunction() {
+          var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+          var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          var scrolled = (winScroll / height) * 100;
+          document.getElementById("myBar").style.width = scrolled + "%";
+        }</script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            function sendEmail(){}
+            Email.send({
+    Host : "What",
+    Username : "Are",
+    Password : "You",
+    To : 'Looking',
+    From : document.getElementById("email").value,
+    Subject : "For?",
+    Body : "Name: " + document.getElementById("name").value + "<br> Email:" + document.getElementById("email").value+ "<br> Your Phone Number:" + document.getElementById("phone").value+ "<br> Message:" + document.getElementById("message").value
+})
+// .then(message => alert("Message sent.")
+);  
+        </script>
+  </body>
+</html>
